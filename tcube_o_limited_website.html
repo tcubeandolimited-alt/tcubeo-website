@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tcube&O Limited</title>
+  <meta name="description" content="Tcube&O Limited – Innovative solutions, reliable services, and sustainable growth." />
+  <style>
+    :root {
+      /* Brand Colors: Green, Blue & White */
+      --primary: #0b5ed7;   /* Blue */
+      --secondary: #198754; /* Green */
+      --dark: #0f172a;      /* Dark blue-grey for text/footer */
+      --light: #ffffff;    /* White background */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      padding: 2rem 1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    nav h1 {
+      font-size: 1.6rem;
+      letter-spacing: 0.5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 3rem auto 0;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .hero h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      padding: 4rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .card h4 {
+      margin-bottom: 0.5rem;
+      color: var(--secondary);
+    }
+
+    .about {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .contact form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .contact button {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 3rem;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div style="display:flex;align-items:center;gap:0.8rem;">
+        <img src="logo.png" alt="Tcube&O Limited Logo" style="height:48px;width:auto;" />
+        <h1>Tcube&O Limited</h1>
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#education">Education Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <h2>Integrated Solutions Across Real Estate, Agriculture, Telecom & Education</h2>
+      <p>
+        Tcube&O Limited delivers professional services spanning real estate development,
+        agricultural value chains, telecommunication solutions, consultancy, and
+        international education placement—driving sustainable growth and global opportunities.
+      </p>
+    </div>
+  </header>
+
+  <section id="about">
+    <h3>About Us</h3>
+    <div class="about">
+      <p>
+        Tcube&O Limited is a diversified company providing professional services across
+        <strong>Real Estate</strong>, <strong>Agricultural Enterprises</strong>,
+        <strong>Telecommunication Services</strong>, <strong>Business Consultancy</strong>, and
+        <strong>International Education Placement</strong>, and <strong>Education Consultancy</strong>.
+      </p>
+      <p style="margin-top: 1rem;">
+        We support individuals, businesses, and institutions by delivering reliable infrastructure,
+        strategic advisory services, comprehensive education consultancy, and seamless pathways for foreign students seeking admission
+        into higher institutions worldwide.
+      </p>
+      <p style="margin-top: 1rem;">
+        Our mission is to create lasting value through innovation, professionalism,
+        global partnerships, and ethical business practices.
+      </p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h3>Our Services</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Real Estate Services</h4>
+        <p>
+          Property development, land acquisition, sales and leasing,
+          estate management, and real estate consultancy for residential
+          and commercial projects.
+        </p>
+      </div>
+      <div class="card">
+        <h4>Agricultural Businesses</h4>
+        <p>
+          Agricultural production, farm management, agro-processing,
+          agribusiness consulting, and supply chain support focused on
+          sustainability and food security.
+        </p>
+      </div>
+      <div class="card">
+        <h4>Telecommunication Services</h4>
+        <p>
+          Telecom infrastructure support, ICT services, connectivity solutions,
+          network deployment assistance, and technology-driven communication systems.
+        </p>
+      </div>
+      <div class="card">
+        <h4>Consultancy Services</h4>
+        <p>
+          Business advisory, project feasibility studies, strategic planning,
+          operational support, and regulatory guidance across multiple sectors.
+        </p>
+      </div>
+      <div class="card">
+        <h4>Education Consultancy</h4>
+        <p>
+          Academic and career counselling, course and country selection guidance,
+          admission advisory services, visa support insights, and institutional partnerships
+          for students and education stakeholders.
+        </p>
+      </div>
+      <div class="card">
+        <h4>International Education Placement</h4>
+        <p>
+          Consultancy and placement of foreign students into reputable higher institutions,
+          including admission processing, documentation support, compliance guidance,
+          and post-admission assistance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h3>Education Services</h3>
+    <p>
+      Our Education Services are designed to guide students through every stage of their
+      international study journey, ensuring a smooth, transparent, and successful process.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h4>1. Counselling</h4>
+        <p>
+          Personalized academic and career counselling to understand student goals,
+          assess eligibility, and recommend suitable courses, countries, and institutions.
+        </p>
+      </div>
+      <div class="card">
+        <h4>2. Admission</h4>
+        <p>
+          Professional admission support including application processing,
+          document preparation, offer management, and communication with institutions.
+        </p>
+      </div>
+      <div class="card">
+        <h4>3. Visa</h4>
+        <p>
+          Guidance on visa requirements, documentation review, interview preparation,
+          and compliance support in line with destination country regulations.
+        </p>
+      </div>
+      <div class="card">
+        <h4>4. Arrival</h4>
+        <p>
+          Pre-departure briefing, travel guidance, accommodation support,
+          and post-arrival assistance to help students settle successfully.
+        </p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:3rem;">Study Destination: Nigeria</h3>
+    <p>
+      We support foreign students from Europe, America, and other parts of the world seeking
+      quality higher education opportunities in Nigeria.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <h4>Christopher University</h4>
+        <p>
+          Located along the Lagos–Ibadan Expressway, Christopher University offers quality
+          undergraduate and postgraduate programs in a serene academic environment,
+          suitable for international students seeking Nigerian higher education.
+        </p>
+        <p><strong>Program Highlights:</strong> Nursing, Medicine, Engineering, Management</p>
+      </div>
+      <div class="card">
+        <h4>Lead City University</h4>
+        <p>
+          Based in Ibadan, Lead City University is a reputable private university known for
+          innovative programs, flexible learning, and strong support for international students.
+        </p>
+        <p><strong>Program Highlights:</strong> Nursing, Engineering, Management</p>
+      </div>
+      <div class="card">
+        <h4>Polytechnics & Colleges</h4>
+        <p>
+          Admission support for polytechnics, colleges of education, and specialized institutions
+          providing technical and professional training.
+        </p>
+      </div>
+      <div class="card">
+        <h4>Students from Europe</h4>
+        <p>
+          Dedicated admission and relocation support for students from the UK, EU countries,
+          and other parts of Europe seeking to study in Nigeria.
+        </p>
+      </div>
+      <div class="card">
+        <h4>Students from America</h4>
+        <p>
+          Tailored guidance for students from the United States, Canada, and Latin America
+          interested in Nigerian higher institutions.
+        </p>
+      </div>
+      <div class="card">
+        <h4>Students from Other Countries</h4>
+        <p>
+          Comprehensive education consultancy and placement services for international students
+          from Asia, the Middle East, and Africa choosing Nigeria as their study destination.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Contact Us</h3>
+    <div class="contact">
+      <div>
+        <p><strong>Email:</strong> tcubeandolimited@gmail.com</p>
+        <p><strong>Phone:</strong> +234 802 745 8271</p>
+        <p><strong>Address:</strong> Lagos, Nigeria</p>
+      </div>
+
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Tcube&O Limited. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
